@@ -13,9 +13,11 @@
 [![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://paypal.me/andersevenrud)
 [![Community](https://img.shields.io/badge/join-community-green.svg)](https://community.os-js.org/)
 
-This is the OS.js base project that you can use as a template to make your own distributions, installations and do general development.
+## Introduction
 
-> **This is v3. For v2 (deprecated) see the `master` branch.**
+This is the OS.js base repository that you can use as a template to make your own distributions, installations and development environments.
+
+> **This branch is for v3. The deprecated v2 codebase can be found in the `master` branch.**
 
 ## Try it yourself
 
@@ -23,31 +25,40 @@ Visit the [official demo](https://demo.os-js.org/v3/) for a preview version. Ple
 
 ![ScreenShot](https://www.os-js.org/screenshot.png)
 
-## Requirements
-
-Node 8 (or newer) and any modern web-browser.
-
 ## Installation
 
 > OS.js runs on `localhost:8000` by default.
 
 ### Demo
 
-You can run a demo using docker without checkout out any source-code:
+You can run a demo using Docker without checkout out any source-code:
 
 ```
 docker run -p 8000:8000 osjs/osjs:v3
 ```
 
-### Manual
+### Custom
+
+Clone the v3 branch of the official OS.js repository:
 
 ```
-# Clone *only* the v3 branch
 git clone -b v3 --single-branch https://github.com/os-js/OS.js.git
 cd OS.js
 ```
 
+#### Docker
+
+You can run OS.js locally without installing anything on your host system if you have Docker and Docker Compose installed.
+
+Simply run the following command and a complete environment will be set up for you:
+
+```
+docker-compose up
+```
+
 #### Locally
+
+To install directly on the host system you'll need Node 8 (or later).
 
 ```
 # Install dependencies
@@ -68,15 +79,6 @@ npm run build
 
 # Start serving
 npm run serve
-```
-
-#### Docker
-
-You can also build a Docker image yourself or use docker-compose:
-
-```
-cp .env.example .env
-docker-compose up
 ```
 
 ## Contribution

@@ -1,7 +1,7 @@
 /*!
  * OS.js - JavaScript Cloud/Web Desktop Platform
  *
- * Copyright (c) 2011-2019, Anders Evenrud <andersevenrud@gmail.com>
+ * Copyright (c) 2011-2020, Anders Evenrud <andersevenrud@gmail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -51,7 +51,8 @@ import {
 import {PanelServiceProvider} from '@osjs/panels';
 import {GUIServiceProvider} from '@osjs/gui';
 import {DialogServiceProvider} from '@osjs/dialogs';
-import * as config from './config.js';
+import config from './config.js';
+import './index.scss';
 
 const init = () => {
   const osjs = new Core(config, {});

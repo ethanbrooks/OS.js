@@ -1,3 +1,4 @@
+#!/bin/bash
 #
 # OS.js - JavaScript Cloud/Web Desktop Platform
 #
@@ -30,8 +31,7 @@
 
 # THIS IS ONLY INTENDED FOR DEVELOPMENT USAGE
 
-FROM node:10
-RUN npm install -g nodemon
-WORKDIR /usr/src/osjs
-COPY entrypoint.sh .
-CMD ./entrypoint.sh
+npm install
+npm run build
+npm run package:discover
+npx nodemon --watch package-lock.json --watch src/server --watch package.json --watch src/packages src/server/index.js

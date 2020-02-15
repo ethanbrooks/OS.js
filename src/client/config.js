@@ -1,7 +1,7 @@
-/*!
+/*
  * OS.js - JavaScript Cloud/Web Desktop Platform
  *
- * Copyright (c) 2011-2019, Anders Evenrud <andersevenrud@gmail.com>
+ * Copyright (c) 2011-2020, Anders Evenrud <andersevenrud@gmail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -34,7 +34,7 @@
 // Complete config tree: https://github.com/os-js/osjs-client/blob/master/src/config.js
 //
 
-module.exports = {
+export default {
   auth: {
     login: {
       username: 'demo',
